@@ -13,7 +13,7 @@ describe('SongQueueView', function() {
         url: '/test/testsong2.mp3',
         title:'test song 2'
       }
-    ]);
+    ]); 
   });
 
   it('creates SongQueueEntryViews for each queued song & renders them', function(){

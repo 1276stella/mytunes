@@ -22,12 +22,6 @@ var AppModel = Backbone.Model.extend({
     }, this);    
   },
 
-  // .on('enqueue', function(){
-  //   //queue the next song
-  // });
-  // enqueue: function(){
-
-  // }
 
 });
 
