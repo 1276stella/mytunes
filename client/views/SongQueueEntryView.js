@@ -5,8 +5,8 @@ var SongQueueEntryView = Backbone.View.extend({
 
   template: _.template('<td>(<%= artist %>)</td><td><%= title %></td>'),
 
-  events : {
-    "click  tr": "render"
-  }  
+  render: function() {
+    return this.$el.html(this.template(this.model.attributes));
+  }
   // your code here!
 });

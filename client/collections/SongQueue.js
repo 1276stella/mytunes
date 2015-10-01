@@ -21,21 +21,9 @@ var SongQueue = Songs.extend({
     }, this);
   },
   
-  // initialize: function(params){
-    // this.modal.on('add', function(song){
-  //     if()
-  //   }),
-
-
-  //   add: function(song) {
-
-  //   },
-
-
-
-    playFirst: function(){
-      this.at(0).play();      
-    }
+  playFirst: function(){
+    this.at(0).play();      
+  }
 
   
 });
