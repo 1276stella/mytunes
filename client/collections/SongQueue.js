@@ -11,7 +11,7 @@ var SongQueue = Songs.extend({
     this.on('ended', function() {
       console.log('this', this);
       this.at(0).dequeue();
-      if(this.models.length === 1) {
+      if(this.models.length >= 1) {
         this.playFirst();
       }     
     }, this);
@@ -23,7 +23,11 @@ var SongQueue = Songs.extend({
   
   playFirst: function(){
     this.at(0).play();      
-  }
+  },
+
+  // ended: function(){
+  //   this.remove(this.model.get(this.model.url)).enqueue;
+  // }
 
   
 });
